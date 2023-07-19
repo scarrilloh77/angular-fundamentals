@@ -15,6 +15,8 @@ export class AppComponent {
     age: 23,
     avatar: 'https://www.w3schools.com/howto/img_lights_wide.jpg',
   };
+  names: string[] = ['Pedro', 'Maria', 'Ricardo'];
+  newName = '';
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -28,5 +30,12 @@ export class AppComponent {
   changeName(event: Event) {
     const element = event.target as HTMLInputElement;
     this.person.name = element.value;
+  }
+  addName() {
+    this.names.push(this.newName);
+    this.newName = '';
+  }
+  deleteName(index: number) {
+    this.names.splice(index, 1);
   }
 }
