@@ -3,8 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'basic-angular';
+  name = 'Sebastian';
+  age = 23;
+  img = 'https://www.w3schools.com/howto/img_lights_wide.jpg';
 }
