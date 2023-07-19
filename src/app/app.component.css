@@ -20,6 +20,21 @@ p {
   margin: 0;
 }
 
+.message-error {
+  background: red;
+  color: white;
+  opacity: 0;
+  transition: all linear 0.5s;
+}
+
+.invalid {
+  opacity: 1;
+}
+
+.styles {
+  display: flex;
+}
+
 @media screen and (min-width: 40em) {
   .products--grid {
     display: grid;

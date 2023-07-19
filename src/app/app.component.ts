@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  widthImg = 10;
   name = 'Sebastian';
   age = 23;
   img = 'https://www.w3schools.com/howto/img_lights_wide.jpg';
