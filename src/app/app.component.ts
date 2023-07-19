@@ -12,6 +12,11 @@ export class AppComponent {
   age = 23;
   img = 'https://www.w3schools.com/howto/img_lights_wide.jpg';
   btnDisabled = true;
+  register = {
+    name: '',
+    email: '',
+    password: '',
+  };
   person = {
     name: 'Sebastian',
     age: 23,
@@ -77,5 +82,8 @@ export class AppComponent {
   }
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+  onRegister() {
+    console.log(this.register);
   }
 }
